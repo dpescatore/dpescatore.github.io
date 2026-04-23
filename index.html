@@ -384,35 +384,42 @@
         <div class="section-tag">Contatti</div>
         <h2 class="section-title">Parliamoci</h2>
         <p>Un progetto, una collaborazione o anche solo una chiacchierata tecnica — scrivimi. Rispondo entro 24 ore.</p>
+        <br>
         <div class="contact-links">
           <a href="mailto:dpescatore@gmail.com" class="clink">
             <span class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-            dpescatore@gmail.com
+            eMail ·dpescatore@gmail.com
           </a>
-          <a href="https://www.devday.it" target="_blank" class="clink">
-            <span class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-            DevDay Benevento · devday.it
+          <a href="https://www.linkedin.com/in/daniele-pescatore/" target="_blank" rel="noopener noreferrer" class="clink">
+            <span class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+            LinkedIn · Daniele Pescatore
           </a>
           <a href="https://x.com/SgtFisherman" target="_blank" rel="noopener noreferrer" class="clink">
             <span class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16"/><path d="M20 4L4 20"/></svg></span>
             X · @SgtFisherman
           </a>
+          <a href="https://www.devday.it" target="_blank" class="clink">
+            <span class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            DevDay Benevento · devday.it
+          </a>
           <a href="https://www.instagram.com/_Sgt_Pepper_/" target="_blank" rel="noopener noreferrer" class="clink">
             <span class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
             Instagram · @_Sgt_Pepper_
-          </a>          
+          </a>
         </div>
       </div>
-      <div class="reveal">
-        <div class="form-group"><label>Nome</label><input type="text" placeholder="Il tuo nome"></div>
-        <div class="form-group"><label>Email</label><input type="email" placeholder="tua@email.com"></div>
-        <div class="form-group"><label>Oggetto</label><input type="text" placeholder="Progetto / Collaborazione / Altro"></div>
-        <div class="form-group"><label>Messaggio</label><textarea placeholder="Descrivi la tua esigenza..."></textarea></div>
-        <button class="btn-send">
+      <form id="contact-form" class="reveal" novalidate>
+        <input type="hidden" name="_subject" value="Nuovo messaggio dal portfolio">
+        <div class="form-group"><label for="nome">Nome</label><input type="text" id="nome" name="nome" placeholder="Il tuo nome" required></div>
+        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="tua@email.com" required></div>
+        <div class="form-group"><label for="oggetto">Oggetto</label><input type="text" id="oggetto" name="oggetto" placeholder="Progetto / Collaborazione / Altro"></div>
+        <div class="form-group"><label for="messaggio">Messaggio</label><textarea id="messaggio" name="messaggio" placeholder="Descrivi la tua esigenza..." required></textarea></div>
+        <button type="submit" class="btn-send">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           Invia messaggio
         </button>
-      </div>
+        <div id="form-feedback" aria-live="polite"></div>
+      </form>
     </div>
   </div>
 </section>

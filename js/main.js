@@ -251,3 +251,58 @@
       : 'none';
   });
 })();
+
+/* === CONTACT FORM === */
+(function () {
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+
+  const btn = form.querySelector('.btn-send');
+  const feedback = document.getElementById('form-feedback');
+  const btnOriginalHTML = btn.innerHTML;
+
+  function showFeedback(msg, type) {
+    feedback.textContent = msg;
+    feedback.className = type === 'success' ? 'form-feedback-success' : 'form-feedback-error';
+  }
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    feedback.className = '';
+    feedback.textContent = '';
+
+    const nome = form.nome.value.trim();
+    const email = form.email.value.trim();
+    const messaggio = form.messaggio.value.trim();
+
+    if (!nome || !email || !messaggio) {
+      showFeedback('Compila i campi obbligatori: Nome, Email e Messaggio.', 'error');
+      return;
+    }
+
+    btn.disabled = true;
+    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Invio in corso…';
+
+    try {
+      const res = await fetch('https://formspree.io/f/xyklleen', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+
+      if (res.ok) {
+        showFeedback('Messaggio inviato! Ti rispondo entro 24 ore.', 'success');
+        form.reset();
+      } else {
+        const data = await res.json().catch(() => ({}));
+        const msg = data.errors ? data.errors.map(err => err.message).join(', ') : 'Errore durante l\'invio. Riprova.';
+        showFeedback(msg, 'error');
+      }
+    } catch {
+      showFeedback('Errore di rete. Controlla la connessione e riprova.', 'error');
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = btnOriginalHTML;
+    }
+  });
+})();

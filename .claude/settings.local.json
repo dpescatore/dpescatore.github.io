@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd c:\\\\\\\\Vibe_Coding\\\\\\\\Personal_Website)",
+      "Bash(git log *)"
+    ]
+  }
+}
