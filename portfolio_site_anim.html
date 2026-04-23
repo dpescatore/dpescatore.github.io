@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniele Pescatore – Software Engineer & Innovation Manager | Benevento</title>
+<meta name="description" content="Daniele Pescatore – Ingegnere Informatico, Software Analyst, Innovation Manager e Docente IT. Specializzato in sistemi safety-critical, Emergency Management, WebGIS e AI integration. Disponibile per consulenze freelance.">
+<meta name="keywords" content="Daniele Pescatore, Software Engineer, Innovation Manager, Ingegnere Informatico, consulente IT, Emergency Management, WebGIS, microservizi, .NET, Java, Benevento, freelance, docente informatica, DevDay Benevento">
+<meta name="author" content="Daniele Pescatore">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#080b12">
+<link rel="canonical" href="https://danielepescatore.it/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielepescatore.it/">
+<meta property="og:title" content="Daniele Pescatore – Software Engineer & Innovation Manager">
+<meta property="og:description" content="Ingegnere Informatico con oltre 10 anni di esperienza in sistemi safety-critical, Emergency Management e innovazione digitale. Consulente freelance e docente IT.">
+<meta property="og:image" content="https://danielepescatore.it/og-image.jpg">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Daniele Pescatore">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://danielepescatore.it/">
+<meta name="twitter:title" content="Daniele Pescatore – Software Engineer & Innovation Manager">
+<meta name="twitter:description" content="Ingegnere Informatico con oltre 10 anni di esperienza in sistemi safety-critical, Emergency Management e innovazione digitale.">
+<meta name="twitter:image" content="https://danielepescatore.it/og-image.jpg">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Daniele Pescatore",
+  "url": "https://danielepescatore.it",
+  "email": "dpescatore@gmail.com",
+  "jobTitle": "Software Engineer & Innovation Manager",
+  "description": "Ingegnere Informatico specializzato in sistemi safety-critical per Emergency Management, progetti finanziati nazionali e internazionali, architetture enterprise e innovazione digitale.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Benevento",
+    "addressRegion": "BN",
+    "addressCountry": "IT"
+  },
+  "knowsAbout": ["Software Engineering", "Emergency Management Systems", "WebGIS", "Microservices", "AI Integration", "Innovation Management", "Didattica Informatica"],
+  "sameAs": [
+    "https://www.devday.it",
+    "https://www.scrum.org/certificates/492593"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Università degli Studi del Sannio",
+    "address": { "@type": "PostalAddress", "addressLocality": "Benevento", "addressCountry": "IT" }
+  },
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "name": "Professional Scrum Master I", "recognizedBy": { "@type": "Organization", "name": "Scrum.org" } },
+    { "@type": "EducationalOccupationalCredential", "name": "Documentum D7 Consultant", "recognizedBy": { "@type": "Organization", "name": "OpenText" } },
+    { "@type": "EducationalOccupationalCredential", "name": "Application Developer Liferay 7.0", "recognizedBy": { "@type": "Organization", "name": "Liferay" } }
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Beta 80 Group S.p.A.",
+    "url": "https://www.beta80group.com"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<canvas id="hero-canvas" style="position:absolute;top:0;left:0;z-index:0;pointer-events:none"></canvas>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-logo">Daniele <span>Pescatore</span></span>
+    <ul class="nav-links">
+      <li><a href="#about">Chi sono</a></li>
+      <li><a href="#services">Servizi</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contatti</a></li>
+    </ul>
+    <a href="#contact" class="btn-nav">Contattami</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="reveal">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Benevento, Italia · Remote-friendly
+        </div>
+        <h1 class="hero-title">Software Engineer<br>& <span id="typed-role"></span><span class="cursor"></span></h1>
+        <p class="hero-sub">Ingegnere Informatico con oltre 10 anni nel mondo dello sviluppo enterprise, safety-critical e dell'innovazione digitale. Consulente, docente e community builder.</p>
+        <div class="btn-group">
+          <a href="#services" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            I miei servizi
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Scrivimi
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num" data-target="10" data-suffix="+">0</span><span class="stat-label">Anni di esperienza</span></div>
+          <div class="stat"><span class="stat-num" data-target="300" data-suffix="+">0</span><span class="stat-label">Community DevDay</span></div>
+          <div class="stat"><span class="stat-num" data-target="5" data-suffix="+">0</span><span class="stat-label">Progetti europei</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="hero-avatar">
+          <div class="avatar-ring-outer"></div>
+          <div class="avatar-ring-inner"></div>
+          <svg class="avatar-icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="28" r="14" stroke="url(#ag)" stroke-width="2" fill="none"/>
+            <path d="M14 68c0-14.36 11.64-26 26-26h0c14.36 0 26 11.64 26 26" stroke="url(#ag)" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <defs><linearGradient id="ag" x1="14" y1="14" x2="66" y2="66" gradientUnits="userSpaceOnUse"><stop stop-color="#4f7ef7"/><stop offset="1" stop-color="#9b6df5"/></linearGradient></defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="section-tag">Chi sono</div>
+        <h2 class="section-title">Build. Teach. Innovate.</h2>
+        <p>Ingegnere Informatico con laurea specialistica all'<a href="https://www.unisannio.it/" target="_blank" rel="noopener noreferrer">Università del Sannio</a>, lavoro da oltre 10 anni su sistemi software enterprise e safety-critical per l'Emergency Management.</p>
+        <p>Attualmente ricopro il doppio ruolo di <strong style="color:var(--text);font-weight:600">Software Analyst & Innovation Manager</strong> e di docente nelle scuole superiori, dove insegno Informatica, Sistemi e Reti e Tecnologie di Progettazione.</p>
+        <p>Sono community manager di <strong style="color:var(--text);font-weight:600"><a href="https://www.devday.it" target="_blank" rel="noopener noreferrer">DevDay Benevento</a></strong> (300+ iscritti), speaker a conferenze e seminari universitari, e da sempre appassionato di tecnologia applicata al mondo reale.</p>
+        <div class="skill-chips">
+          <span class="chip">Java / C# / JS / C</span>
+          <span class="chip">.NET / Spring</span>
+          <span class="chip">Angular / Node.js</span>
+          <span class="chip">Oracle / PostgreSQL</span>
+          <span class="chip">REST Microservices</span>
+          <span class="chip">WebGIS / OpenLayers</span>
+          <span class="chip">Scrum / Agile</span>
+          <span class="chip chip-hot">✦ Vibe Coding</span>
+          <span class="chip chip-hot">✦ AI-Assisted Dev</span>
+          <span class="chip chip-hot">✦ Prompt Engineering</span>
+          <span class="chip chip-hot">✦ LLM Integration</span>
+          <span class="chip chip-hot">✦ Agentic Workflows</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="section-tag">Percorso</div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><div class="tl-year">2022 – oggi</div><div class="tl-title">Software Analyst & Innovation Manager</div><div class="tl-desc">Consulente freelance per <a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. Sviluppo sistemi web per Emergency Management e gestione dell'innovazione tecnologica.</div></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><div class="tl-year">2021 – oggi</div><div class="tl-title">Docente di Informatica</div><div class="tl-desc">Vincitore concorso ordinario STEM. IIS Carafa Giustiniani, Cerreto Sannita. Materie: Informatica, Sistemi e Reti, TPSI, Gestione Progetti.</div></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><div class="tl-year">2020 – 2021</div><div class="tl-title">Proxy Product Owner – Crisis Management</div><div class="tl-desc"><a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. Architettura prodotti safety-critical: 118, dati COVID, Sala Operativa Nazionale CRI.</div></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><div class="tl-year">2017 – 2020</div><div class="tl-title">Software Analyst & Team Leader</div><div class="tl-desc"><a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. Sistema integrato .NET per 118 e fleet management real-time. Correlatore tesi <a href="https://www.unisannio.it/" target="_blank" rel="noopener noreferrer">Univ. del Sannio</a>.</div></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-dot"></div></div>
+            <div class="tl-content"><div class="tl-year">2013 – 2017</div><div class="tl-title">Software Developer – R&D & ICT</div><div class="tl-desc"><a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. eHealth, SmartCities, sistemi documentali Documentum, WebGIS con PostGIS e OpenLayers.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Cosa offro</div>
+      <h2 class="section-title">Servizi</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="s-icon si-blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Sistemi Safety-Critical</h3>
+        <p>Progettazione e sviluppo di soluzioni per l'Emergency Management: dispatch 118, fleet management real-time, sale operative e gestione crisi.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="s-icon si-purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Architettura & Microservizi</h3>
+        <p>Design di sistemi distribuiti enterprise, microservizi REST con .NET, integrazione stack Oracle/SQL Server e ottimizzazione delle performance.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="s-icon si-pink">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3>AI Integration & Vibe Coding</h3>
+        <p>Integrazione di LLM e strumenti AI nel ciclo di sviluppo. Agentic workflows, prompt engineering applicato e AI-assisted development per accelerare la delivery.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="s-icon si-teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+        </div>
+        <h3>WebGIS & Geolocalizzazione</h3>
+        <p>Sistemi GIS web-based con PostGIS, GeoServer, OpenLayers e Leaflet. Standard WMS/WFS e soluzioni cartografiche per l'emergenza e le SmartCities.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="s-icon si-amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Formazione & Didattica IT</h3>
+        <p>Corsi, workshop e tutoring su informatica, sistemi e reti, programmazione e gestione progetti. Per studenti, team aziendali e professionisti.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="s-icon si-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Innovation Management</h3>
+        <p>Supporto alla trasformazione digitale, scouting tecnologico, gestione dell'innovazione e redazione di documentazione per gare europee e bandi di ricerca.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Progetti selezionati</div>
+      <h2 class="section-title">Portfolio</h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-thumb pt-blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7ea8f8" stroke-width="1.5"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/><path d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+          <div class="project-tags"><span class="ptag">.NET</span><span class="ptag">Real-time</span><span class="ptag">Oracle</span></div>
+        </div>
+        <div class="project-body">
+          <h3>Sistema Integrato 118 & Fleet Management</h3>
+          <p>Piattaforma safety-critical per la gestione real-time delle emergenze mediche e il monitoraggio della flotta. Team leader e architetto del sistema.</p>
+          <span class="project-flag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+            Enterprise – <a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>
+          </span>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb pt-teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          <div class="project-tags"><span class="ptag">Crisis Mgmt</span><span class="ptag">Microservizi</span></div>
+        </div>
+        <div class="project-body">
+          <h3>Sala Operativa Nazionale – Croce Rossa</h3>
+          <p>Sistema operativo per la gestione delle emergenze e dei dati COVID-19 per la <a href="https://www.cri.it/" target="_blank" rel="noopener noreferrer">Croce Rossa Italiana</a>. Product Owner e responsabile architettura.</p>
+          <span class="project-flag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <a href="https://www.cri.it/" target="_blank" rel="noopener noreferrer">Croce Rossa Italiana</a>
+          </span>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb pt-amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.5"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+          <div class="project-tags"><span class="ptag">SmartCity</span><span class="ptag">WebGIS</span><span class="ptag">Angular</span></div>
+        </div>
+        <div class="project-body">
+          <h3>Piattaforma SmartCity & WebGIS</h3>
+          <p>Applicazioni full-stack per SmartCities su stack MEAN e sistema WebGIS con PostGIS, GeoServer e OpenLayers per enti pubblici.</p>
+          <span class="project-flag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+            R&D – <a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>
+          </span>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb pt-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <div class="project-tags"><span class="ptag">ESA</span><span class="ptag">Embedded</span></div>
+        </div>
+        <div class="project-body">
+          <h3>Progetto ESEO – Satellite ESA</h3>
+          <p>Partecipazione al progetto interuniversitario ESEO per la realizzazione di un satellite geostazionario, in collaborazione con <a href="https://www.esa.int/" target="_blank" rel="noopener noreferrer">ESA</a> (<a href="https://www.esa.int/About_Us/ESOC" target="_blank" rel="noopener noreferrer">ESOC</a>, Darmstadt).</p>
+          <span class="project-flag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <a href="https://www.esa.int/" target="_blank" rel="noopener noreferrer">ESA</a> – <a href="https://www.unisannio.it/" target="_blank" rel="noopener noreferrer">Univ. del Sannio</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICAZIONI -->
+<section id="certs">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Qualifiche</div>
+      <h2 class="section-title">Certificazioni & Abilitazioni</h2>
+    </div>
+    <div class="certs-grid reveal">
+      <div class="cert-card">
+        <div class="cert-icon si-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <div><div class="cert-name">Professional Scrum Master I</div><div class="cert-org">Scrum.org</div></div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon si-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><div class="cert-name">Ingegnere Abilitato – Settore Informazione</div><div class="cert-org">Ordine degli Ingegneri</div></div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon si-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <div><div class="cert-name">Documentum D7 Consultant</div><div class="cert-org">OpenText</div></div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon si-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <div><div class="cert-name">Application Developer Liferay 7.0</div><div class="cert-org">Liferay Training Team</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="section-tag">Contatti</div>
+        <h2 class="section-title">Parliamoci</h2>
+        <p>Un progetto, una collaborazione o anche solo una chiacchierata tecnica — scrivimi. Rispondo entro 24 ore.</p>
+        <div class="contact-links">
+          <a href="mailto:dpescatore@gmail.com" class="clink">
+            <span class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+            dpescatore@gmail.com
+          </a>
+          <a href="https://www.devday.it" target="_blank" class="clink">
+            <span class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            DevDay Benevento · devday.it
+          </a>
+          <a href="https://x.com/SgtFisherman" target="_blank" rel="noopener noreferrer" class="clink">
+            <span class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16"/><path d="M20 4L4 20"/></svg></span>
+            X · @SgtFisherman
+          </a>
+          <a href="https://www.instagram.com/_Sgt_Pepper_/" target="_blank" rel="noopener noreferrer" class="clink">
+            <span class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+            Instagram · @_Sgt_Pepper_
+          </a>          
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="form-group"><label>Nome</label><input type="text" placeholder="Il tuo nome"></div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="tua@email.com"></div>
+        <div class="form-group"><label>Oggetto</label><input type="text" placeholder="Progetto / Collaborazione / Altro"></div>
+        <div class="form-group"><label>Messaggio</label><textarea placeholder="Descrivi la tua esigenza..."></textarea></div>
+        <button class="btn-send">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Invia messaggio
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Daniele Pescatore · Software Engineer & Innovation Manager · Benevento, Italia</p>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
