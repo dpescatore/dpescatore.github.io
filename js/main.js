@@ -176,7 +176,7 @@
 (function () {
   const roles = [
     'Innovation Manager',
-    'Software Consultant',
+    'ICT Consultant',
     'Vibe Coder',
     'Community Builder',
     'Docente di Informatica'
