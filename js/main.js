@@ -174,17 +174,13 @@
 
 /* === TYPING ANIMATION === */
 (function () {
-  const roles = [
-    'Innovation Manager',
-    'ICT Consultant',
-    'Vibe Coder',
-    'Community Builder',
-    'Docente di Informatica'
-  ];
+  let roles = [];
   let ri = 0, ci = 0, del = false;
+  let timeoutId = null;
   const el = document.getElementById('typed-role');
 
   function type() {
+    if (!roles.length || !el) return;
     const cur = roles[ri];
     el.textContent = del ? cur.slice(0, --ci) : cur.slice(0, ++ci);
     let delay = del ? 42 : 85;
@@ -196,10 +192,18 @@
       ri = (ri + 1) % roles.length;
       delay = 280;
     }
-    setTimeout(type, delay);
+    timeoutId = setTimeout(type, delay);
   }
 
-  type();
+  document.addEventListener('langchange', () => {
+    const newRoles = window.i18n && window.i18n.t('hero.roles');
+    if (!Array.isArray(newRoles) || !newRoles.length) return;
+    roles = newRoles;
+    if (timeoutId) clearTimeout(timeoutId);
+    ri = 0; ci = 0; del = false;
+    if (el) el.textContent = '';
+    type();
+  });
 })();
 
 /* === COUNT-UP ANIMATION === */
@@ -258,8 +262,8 @@
   if (!form) return;
 
   const btn = form.querySelector('.btn-send');
+  const btnTextEl = btn.querySelector('[data-i18n="form.submit"]');
   const feedback = document.getElementById('form-feedback');
-  const btnOriginalHTML = btn.innerHTML;
 
   function showFeedback(msg, type) {
     feedback.textContent = msg;
@@ -276,12 +280,12 @@
     const messaggio = form.messaggio.value.trim();
 
     if (!nome || !email || !messaggio) {
-      showFeedback('Compila i campi obbligatori: Nome, Email e Messaggio.', 'error');
+      showFeedback(window.i18n.t('form.validation'), 'error');
       return;
     }
 
     btn.disabled = true;
-    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Invio in corso…';
+    if (btnTextEl) btnTextEl.textContent = window.i18n.t('form.sending');
 
     try {
       const res = await fetch('https://formspree.io/f/xyklleen', {
@@ -291,18 +295,18 @@
       });
 
       if (res.ok) {
-        showFeedback('Messaggio inviato! Ti rispondo entro 24 ore.', 'success');
+        showFeedback(window.i18n.t('form.success'), 'success');
         form.reset();
       } else {
         const data = await res.json().catch(() => ({}));
-        const msg = data.errors ? data.errors.map(err => err.message).join(', ') : 'Errore durante l\'invio. Riprova.';
+        const msg = data.errors ? data.errors.map(err => err.message).join(', ') : window.i18n.t('form.error');
         showFeedback(msg, 'error');
       }
     } catch {
-      showFeedback('Errore di rete. Controlla la connessione e riprova.', 'error');
+      showFeedback(window.i18n.t('form.network'), 'error');
     } finally {
       btn.disabled = false;
-      btn.innerHTML = btnOriginalHTML;
+      if (btnTextEl) btnTextEl.textContent = window.i18n.t('form.submit');
     }
   });
 })();

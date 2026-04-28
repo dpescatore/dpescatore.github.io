@@ -111,12 +111,17 @@
   <div class="nav-inner">
     <span class="nav-logo">Daniele <span>Pescatore</span></span>
     <ul class="nav-links">
-      <li><a href="#about">Chi sono</a></li>
-      <li><a href="#services">Servizi</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contatti</a></li>
+      <li><a href="#about" data-i18n="nav.about">Chi sono</a></li>
+      <li><a href="#services" data-i18n="nav.services">Servizi</a></li>
+      <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contatti</a></li>
     </ul>
-    <a href="#contact" class="btn-nav">Contattami</a>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="it" aria-pressed="true">IT</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="#contact" class="btn-nav" data-i18n="nav.cta">Contattami</a>
   </div>
 </nav>
 
@@ -127,25 +132,25 @@
       <div class="reveal">
         <div class="hero-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          Benevento, Italia · Remote-friendly
+          <span data-i18n="hero.badge">Benevento, Italia · Remote-friendly</span>
         </div>
         <h1 class="hero-title">Daniele <span>Pescatore</span></h1>
         <p class="hero-role">Software Engineer & <span id="typed-role"></span><span class="cursor"></span></p>
-        <p class="hero-sub">Software Engineer, Innovation Manager e docente di Informatica a Benevento. Da oltre 10 anni lavoro su sistemi enterprise e safety-critical, Emergency Management, WebGIS, progetti di ricerca finanziata e consulenze su gare d'appalto nella Pubblica Amministrazione.</p>
+        <p class="hero-sub" data-i18n="hero.sub">Software Engineer, Innovation Manager e docente di Informatica a Benevento. Da oltre 10 anni lavoro su sistemi enterprise e safety-critical, Emergency Management, WebGIS, progetti di ricerca finanziata e consulenze su gare d'appalto nella Pubblica Amministrazione.</p>
         <div class="btn-group">
           <a href="#services" class="btn btn-primary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-            I miei servizi
+            <span data-i18n="hero.btn.services">I miei servizi</span>
           </a>
           <a href="#contact" class="btn btn-outline">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Scrivimi
+            <span data-i18n="hero.btn.contact">Scrivimi</span>
           </a>
         </div>
         <div class="hero-stats">
-          <div class="stat"><span class="stat-num" data-target="10" data-suffix="+">0</span><span class="stat-label">Anni di esperienza</span></div>
-          <div class="stat"><span class="stat-num" data-target="300" data-suffix="+">0</span><span class="stat-label">Community DevDay</span></div>
-          <div class="stat"><span class="stat-num" data-target="5" data-suffix="+">0</span><span class="stat-label">Progetti europei</span></div>
+          <div class="stat"><span class="stat-num" data-target="10" data-suffix="+">0</span><span class="stat-label" data-i18n="hero.stats.years">Anni di esperienza</span></div>
+          <div class="stat"><span class="stat-num" data-target="300" data-suffix="+">0</span><span class="stat-label" data-i18n="hero.stats.community">Community DevDay</span></div>
+          <div class="stat"><span class="stat-num" data-target="5" data-suffix="+">0</span><span class="stat-label" data-i18n="hero.stats.projects">Progetti europei</span></div>
         </div>
       </div>
       <div class="reveal">
@@ -164,12 +169,12 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-text reveal">
-        <div class="section-tag">Chi sono</div>
-        <h2 class="section-title">Build. Teach. Innovate.</h2>
-        <p>Ingegnere Informatico con laurea specialistica all'<a href="https://www.unisannio.it/" target="_blank" rel="noopener noreferrer">Università del Sannio</a>, lavoro da oltre 10 anni su sistemi software enterprise e safety-critical per l'Emergency Management, su progetti di ricerca finanziata e consulenze specialistiche su gare d'appalto nella Pubblica Amministrazione.</p>
-        <p>Attualmente ricopro il doppio ruolo di <strong style="color:var(--text);font-weight:600">Software Analyst & Innovation Manager</strong> e di docente nelle scuole superiori, dove insegno Informatica, Tecnologie e Progettazione di Sistemi Informatici e Gestione di Progetti e Organizzazione di Impresa. Il mio percorso formativo e professionale si è arricchito anche grazie a esperienze internazionali in Turchia, Grecia, Austria, Germania, Finlandia e Irlanda.</p>
-        <p>Ho svolto il ruolo di community manager per <strong style="color:var(--text);font-weight:600"><a href="https://www.devday.it" target="_blank" rel="noopener noreferrer">DevDay Benevento</a></strong> (300+ iscritti), speaker a conferenze e seminari universitari, e da sempre sono appassionato di tecnologia applicata al mondo reale.</p>
-        <p>Tra pianoforte jazz e amore per i viaggi, coltivo creatività e curiosità: elementi chiave anche nel mio modo di progettare e lavorare con la tecnologia.</p>
+        <div class="section-tag" data-i18n="about.tag">Chi sono</div>
+        <h2 class="section-title" data-i18n="about.title">Build. Teach. Innovate.</h2>
+        <p data-i18n-html="about.p1">Ingegnere Informatico con laurea specialistica all'<a href="https://www.unisannio.it/" target="_blank" rel="noopener noreferrer">Università del Sannio</a>, lavoro da oltre 10 anni su sistemi software enterprise e safety-critical per l'Emergency Management, su progetti di ricerca finanziata e consulenze specialistiche su gare d'appalto nella Pubblica Amministrazione.</p>
+        <p data-i18n-html="about.p2">Attualmente ricopro il doppio ruolo di <strong style="color:var(--text);font-weight:600">Software Analyst & Innovation Manager</strong> e di docente nelle scuole superiori, dove insegno Informatica, Tecnologie e Progettazione di Sistemi Informatici e Gestione di Progetti e Organizzazione di Impresa. Il mio percorso formativo e professionale si è arricchito anche grazie a esperienze internazionali in Turchia, Grecia, Austria, Germania, Finlandia e Irlanda.</p>
+        <p data-i18n-html="about.p3">Ho svolto il ruolo di community manager per <strong style="color:var(--text);font-weight:600"><a href="https://www.devday.it" target="_blank" rel="noopener noreferrer">DevDay Benevento</a></strong> (300+ iscritti), speaker a conferenze e seminari universitari, e da sempre sono appassionato di tecnologia applicata al mondo reale.</p>
+        <p data-i18n="about.p4">Tra pianoforte jazz e amore per i viaggi, coltivo creatività e curiosità: elementi chiave anche nel mio modo di progettare e lavorare con la tecnologia.</p>
         <div class="skill-chips">
           <span class="chip">Java / C# / JS / C</span>
           <span class="chip">.NET / Spring</span>
@@ -186,27 +191,27 @@
         </div>
       </div>
       <div class="reveal">
-        <div class="section-tag">Percorso</div>
+        <div class="section-tag" data-i18n="about.timeline.tag">Percorso</div>
         <div class="timeline">
           <div class="tl-item">
             <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
-            <div class="tl-content"><div class="tl-year">2022 – oggi</div><div class="tl-title">Software Analyst & Innovation Manager</div><div class="tl-desc">Consulente freelance per <a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. Sviluppo sistemi web per Emergency Management e gestione dell'innovazione tecnologica.</div></div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div> 
-            <div class="tl-content"><div class="tl-year">2021 – oggi</div><div class="tl-title">Docente di Informatica</div><div class="tl-desc">Vincitore concorso ordinario STEM. IIS Carafa Giustiniani, Cerreto Sannita. Materie: Informatica, Sistemi e Reti, Tecnologie e Progettazione di Sistemi Informatici e di Telecominicazione, Gestione Progetti e Organizzazione di Impresa.</div></div>
+            <div class="tl-content"><div class="tl-year">2022 – oggi</div><div class="tl-title" data-i18n="about.tl1.title">Software Analyst & Innovation Manager</div><div class="tl-desc" data-i18n-html="about.tl1.desc">Consulente freelance per <a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. Sviluppo sistemi web per Emergency Management e gestione dell'innovazione tecnologica.</div></div>
           </div>
           <div class="tl-item">
             <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
-            <div class="tl-content"><div class="tl-year">2020 – 2021</div><div class="tl-title">Proxy Product Owner – Crisis Management</div><div class="tl-desc"><a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. Architettura prodotti safety-critical: 118, dati COVID, Sala Operativa Nazionale CRI.</div></div>
+            <div class="tl-content"><div class="tl-year">2021 – oggi</div><div class="tl-title" data-i18n="about.tl2.title">Docente di Informatica</div><div class="tl-desc" data-i18n="about.tl2.desc">Vincitore concorso ordinario STEM. IIS Carafa Giustiniani, Cerreto Sannita. Materie: Informatica, Sistemi e Reti, Tecnologie e Progettazione di Sistemi Informatici e di Telecominicazione, Gestione Progetti e Organizzazione di Impresa.</div></div>
           </div>
           <div class="tl-item">
             <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
-            <div class="tl-content"><div class="tl-year">2017 – 2020</div><div class="tl-title">Software Analyst & Team Leader</div><div class="tl-desc"><a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. Sistema integrato .NET per 118 e fleet management real-time. Correlatore tesi <a href="https://www.unisannio.it/" target="_blank" rel="noopener noreferrer">Unisannio</a>.</div></div>
+            <div class="tl-content"><div class="tl-year">2020 – 2021</div><div class="tl-title" data-i18n="about.tl3.title">Proxy Product Owner – Crisis Management</div><div class="tl-desc" data-i18n-html="about.tl3.desc"><a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. Architettura prodotti safety-critical: 118, dati COVID, Sala Operativa Nazionale CRI.</div></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><div class="tl-year">2017 – 2020</div><div class="tl-title" data-i18n="about.tl4.title">Software Analyst & Team Leader</div><div class="tl-desc" data-i18n-html="about.tl4.desc"><a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. Sistema integrato .NET per 118 e fleet management real-time. Correlatore tesi <a href="https://www.unisannio.it/" target="_blank" rel="noopener noreferrer">Unisannio</a>.</div></div>
           </div>
           <div class="tl-item">
             <div class="tl-left"><div class="tl-dot"></div></div>
-            <div class="tl-content"><div class="tl-year">2013 – 2017</div><div class="tl-title">Software Developer – R&D & ICT</div><div class="tl-desc"><a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. eHealth, SmartCities, sistemi documentali Documentum, WebGIS con PostGIS e OpenLayers.</div></div>
+            <div class="tl-content"><div class="tl-year">2013 – 2017</div><div class="tl-title" data-i18n="about.tl5.title">Software Developer – R&D & ICT</div><div class="tl-desc" data-i18n-html="about.tl5.desc"><a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>. eHealth, SmartCities, sistemi documentali Documentum, WebGIS con PostGIS e OpenLayers.</div></div>
           </div>
         </div>
       </div>
@@ -218,51 +223,51 @@
 <section id="services">
   <div class="container">
     <div class="reveal">
-      <div class="section-tag">Cosa offro</div>
-      <h2 class="section-title">Servizi</h2>
+      <div class="section-tag" data-i18n="services.tag">Cosa offro</div>
+      <h2 class="section-title" data-i18n="services.title">Servizi</h2>
     </div>
     <div class="services-grid">
       <div class="service-card reveal">
         <div class="s-icon si-purple">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
-        <h3>Sviluppo Web, Architetture Software & Microservizi</h3>
-        <p>Analisi, design e sviluppo di sistemi software anche enterprise: Web Applications, backend, microservizi REST, integrazione con Oracle e SQL Server, tuning prestazionale e modernizzazione applicativa.</p>
+        <h3 data-i18n="services.card1.title">Sviluppo Web, Architetture Software & Microservizi</h3>
+        <p data-i18n="services.card1.desc">Analisi, design e sviluppo di sistemi software anche enterprise: Web Applications, backend, microservizi REST, integrazione con Oracle e SQL Server, tuning prestazionale e modernizzazione applicativa.</p>
       </div>
       <div class="service-card reveal">
         <div class="s-icon si-green">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
-        <h3>Innovazione, Gare Pubbliche & Progetti Finanziati</h3>
-        <p>Supporto tecnico per innovazione e trasformazione digitale: gare d'appalto e CONSIP, capitolati e valutazioni tecniche, presales engineering, documentazione di progetto e contributi per iniziative finanziate FESR, H2020 e bandi di ricerca.</p>
+        <h3 data-i18n="services.card2.title">Innovazione, Gare Pubbliche & Progetti Finanziati</h3>
+        <p data-i18n="services.card2.desc">Supporto tecnico per innovazione e trasformazione digitale: gare d'appalto e CONSIP, capitolati e valutazioni tecniche, presales engineering, documentazione di progetto e contributi per iniziative finanziate FESR, H2020 e bandi di ricerca.</p>
       </div>
       <div class="service-card reveal">
         <div class="s-icon si-amber">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
-        <h3>Formazione IT, Docenza & Workshop</h3>
-        <p>Corsi, workshop e tutoring su informatica, AI e vibe coding, sviluppo software, metodologie Agile e gestione progetti. Attivita rivolte a scuole, aziende, professionisti e team tecnici.</p>
+        <h3 data-i18n="services.card3.title">Formazione IT, Docenza & Workshop</h3>
+        <p data-i18n="services.card3.desc">Corsi, workshop e tutoring su informatica, AI e vibe coding, sviluppo software, metodologie Agile e gestione progetti. Attivita rivolte a scuole, aziende, professionisti e team tecnici.</p>
       </div>
       <div class="service-card reveal">
         <div class="s-icon si-pink">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
         </div>
-        <h3>AI Integration & AI-Assisted Development</h3>
-        <p>Integrazione di LLM e strumenti AI nei processi di delivery: agentic workflows, prompt engineering e affiancamento ai team per accelerare sviluppo, analisi e produzione documentale.</p>
+        <h3 data-i18n="services.card4.title">AI Integration & AI-Assisted Development</h3>
+        <p data-i18n="services.card4.desc">Integrazione di LLM e strumenti AI nei processi di delivery: agentic workflows, prompt engineering e affiancamento ai team per accelerare sviluppo, analisi e produzione documentale.</p>
       </div>
       <div class="service-card reveal">
         <div class="s-icon si-blue">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h3>Sistemi Safety-Critical & Emergency Management</h3>
-        <p>Progettazione e sviluppo di soluzioni mission-critical per il soccorso e la gestione delle emergenze: dispatch 118, sale operative, fleet management real-time e gestione crisi.</p>
+        <h3 data-i18n="services.card5.title">Sistemi Safety-Critical & Emergency Management</h3>
+        <p data-i18n="services.card5.desc">Progettazione e sviluppo di soluzioni mission-critical per il soccorso e la gestione delle emergenze: dispatch 118, sale operative, fleet management real-time e gestione crisi.</p>
       </div>
       <div class="service-card reveal">
         <div class="s-icon si-teal">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
         </div>
-        <h3>WebGIS & Geolocalizzazione</h3>
-        <p>Progettazione di sistemi GIS web-based con PostGIS, GeoServer, OpenLayers e Leaflet. Soluzioni cartografiche interoperabili basate su standard WMS/WFS per emergenza, territorio e Smart City.</p>
+        <h3 data-i18n="services.card6.title">WebGIS & Geolocalizzazione</h3>
+        <p data-i18n="services.card6.desc">Progettazione di sistemi GIS web-based con PostGIS, GeoServer, OpenLayers e Leaflet. Soluzioni cartografiche interoperabili basate su standard WMS/WFS per emergenza, territorio e Smart City.</p>
       </div>
     </div>
   </div>
@@ -272,8 +277,8 @@
 <section id="portfolio">
   <div class="container">
     <div class="reveal">
-      <div class="section-tag">Progetti selezionati</div>
-      <h2 class="section-title">Portfolio</h2>
+      <div class="section-tag" data-i18n="portfolio.tag">Progetti selezionati</div>
+      <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
     </div>
     <div class="projects-grid">
       <div class="project-card reveal">
@@ -282,8 +287,8 @@
           <div class="project-tags"><span class="ptag">.NET</span><span class="ptag">Real-time</span><span class="ptag">Oracle</span></div>
         </div>
         <div class="project-body">
-          <h3>Sistema Integrato 118 & Fleet Management</h3>
-          <p>Piattaforma safety-critical per la gestione real-time delle emergenze mediche e il monitoraggio della flotta. Team leader e architetto del sistema.</p>
+          <h3 data-i18n="portfolio.p1.title">Sistema Integrato 118 & Fleet Management</h3>
+          <p data-i18n="portfolio.p1.desc">Piattaforma safety-critical per la gestione real-time delle emergenze mediche e il monitoraggio della flotta. Team leader e architetto del sistema.</p>
           <span class="project-flag">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
             Enterprise – <a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>
@@ -296,8 +301,8 @@
           <div class="project-tags"><span class="ptag">Crisis Mgmt</span><span class="ptag">Microservizi</span></div>
         </div>
         <div class="project-body">
-          <h3>Sala Operativa Nazionale – Croce Rossa</h3>
-          <p>Sistema operativo per la gestione delle emergenze e dei dati COVID-19 per la <a href="https://www.cri.it/" target="_blank" rel="noopener noreferrer">Croce Rossa Italiana</a>. Product Owner e responsabile architettura.</p>
+          <h3 data-i18n="portfolio.p2.title">Sala Operativa Nazionale – Croce Rossa</h3>
+          <p data-i18n-html="portfolio.p2.desc">Sistema operativo per la gestione delle emergenze e dei dati COVID-19 per la <a href="https://www.cri.it/" target="_blank" rel="noopener noreferrer">Croce Rossa Italiana</a>. Product Owner e responsabile architettura.</p>
           <span class="project-flag">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             <a href="https://www.cri.it/" target="_blank" rel="noopener noreferrer">Croce Rossa Italiana</a> – <a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>
@@ -310,8 +315,8 @@
           <div class="project-tags"><span class="ptag">SmartCity</span><span class="ptag">WebGIS</span><span class="ptag">Angular</span></div>
         </div>
         <div class="project-body">
-          <h3>Piattaforma SmartCity & WebGIS</h3>
-          <p>Applicazioni full-stack per SmartCities su stack MEAN e sistema WebGIS con PostGIS, GeoServer e OpenLayers per enti pubblici.</p>
+          <h3 data-i18n="portfolio.p3.title">Piattaforma SmartCity & WebGIS</h3>
+          <p data-i18n="portfolio.p3.desc">Applicazioni full-stack per SmartCities su stack MEAN e sistema WebGIS con PostGIS, GeoServer e OpenLayers per enti pubblici.</p>
           <span class="project-flag">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
             R&D – <a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>
@@ -324,8 +329,8 @@
           <div class="project-tags"><span class="ptag">ESA</span><span class="ptag">Embedded</span></div>
         </div>
         <div class="project-body">
-          <h3>Progetto ESEO – Satellite ESA</h3>
-          <p>Partecipazione al progetto interuniversitario ESEO dell'<a href="https://www.esa.int/" target="_blank" rel="noopener noreferrer">ESA</a>, lanciato con successo il 3 dicembre 2018 a bordo di un <a href="https://www.esa.int/Space_in_Member_States/Italy/Lanciato_con_successo_il_satellite_studentesco_ESEO" target="_blank" rel="noopener noreferrer">SpaceX Falcon 9</a>. Iniziativa ESA Academy con 10 universita europee e oltre 600 studenti coinvolti.</p>
+          <h3 data-i18n="portfolio.p4.title">Progetto ESEO – Satellite ESA</h3>
+          <p data-i18n-html="portfolio.p4.desc">Partecipazione al progetto interuniversitario ESEO dell'<a href="https://www.esa.int/" target="_blank" rel="noopener noreferrer">ESA</a>, lanciato con successo il 3 dicembre 2018 a bordo di un <a href="https://www.esa.int/Space_in_Member_States/Italy/Lanciato_con_successo_il_satellite_studentesco_ESEO" target="_blank" rel="noopener noreferrer">SpaceX Falcon 9</a>. Iniziativa ESA Academy con 10 universita europee e oltre 600 studenti coinvolti.</p>
           <span class="project-flag">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             <a href="https://www.esa.int/" target="_blank" rel="noopener noreferrer">ESA</a> – <a href="https://www.unisannio.it/" target="_blank" rel="noopener noreferrer">Unisannio</a>
@@ -338,8 +343,8 @@
           <div class="project-tags"><span class="ptag">Smart Health</span><span class="ptag">R&D</span><span class="ptag">eHealth</span></div>
         </div>
         <div class="project-body">
-          <h3>Smart Health 2.0</h3>
-          <p>Progetto di Ricerca e Sviluppo in sanita' orientato a e-health, telemedicina e Fascicolo Sanitario Elettronico 2.0. Iniziativa co-finanziata nel programma Smart Cities and Communities / PON Ricerca e Competitivita'.</p>
+          <h3 data-i18n="portfolio.p5.title">Smart Health 2.0</h3>
+          <p data-i18n="portfolio.p5.desc">Progetto di Ricerca e Sviluppo in sanita' orientato a e-health, telemedicina e Fascicolo Sanitario Elettronico 2.0. Iniziativa co-finanziata nel programma Smart Cities and Communities / PON Ricerca e Competitivita'.</p>
           <span class="project-flag">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M12 4h9"/><path d="M4 9h16"/><path d="M4 15h16"/><path d="M8 4v16"/></svg>
             <a href="https://www.icar.cnr.it/progetti/smart-health-2-0/" target="_blank" rel="noopener noreferrer">ICAR-CNR</a> – Smart Health 2.0
@@ -352,8 +357,8 @@
           <div class="project-tags"><span class="ptag">H2020</span><span class="ptag">Triage</span><span class="ptag">Interoperability</span></div>
         </div>
         <div class="project-body">
-          <h3>i-TRIER</h3>
-          <p>Sistema innovativo di triage digitale per Emergency Medical Services e Protezione Civile, con focus su interoperabilita', victim tracking, CAD e integrazione dei dati sanitari in scenari di emergenza maggiore.</p>
+          <h3 data-i18n="portfolio.p6.title">i-TRIER</h3>
+          <p data-i18n="portfolio.p6.desc">Sistema innovativo di triage digitale per Emergency Medical Services e Protezione Civile, con focus su interoperabilita', victim tracking, CAD e integrazione dei dati sanitari in scenari di emergenza maggiore.</p>
           <span class="project-flag">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M12 4h9"/><path d="M4 9h16"/><path d="M4 15h16"/><path d="M8 4v16"/></svg>
             <a href="https://www.i-trier.eu/" target="_blank" rel="noopener noreferrer">i-TRIER</a> – H2020 / <a href="https://www.beta80group.com/" target="_blank" rel="noopener noreferrer">Beta 80 Group</a>
@@ -368,8 +373,8 @@
 <section id="certs">
   <div class="container">
     <div class="reveal">
-      <div class="section-tag">Qualifiche</div>
-      <h2 class="section-title">Certificazioni & Abilitazioni</h2>
+      <div class="section-tag" data-i18n="certs.tag">Qualifiche</div>
+      <h2 class="section-title" data-i18n="certs.title">Certificazioni & Abilitazioni</h2>
     </div>
     <div class="certs-grid reveal">
       <div class="cert-card">
@@ -378,7 +383,7 @@
       </div>
       <div class="cert-card">
         <div class="cert-icon si-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-        <div><div class="cert-name">Ingegnere Abilitato – Settore Informazione</div><div class="cert-org">Ordine degli Ingegneri</div></div>
+        <div><div class="cert-name" data-i18n="certs.cert2.name">Ingegnere Abilitato – Settore Informazione</div><div class="cert-org">Ordine degli Ingegneri</div></div>
       </div>
       <div class="cert-card">
         <div class="cert-icon si-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
@@ -397,9 +402,9 @@
   <div class="container">
     <div class="contact-grid">
       <div class="reveal">
-        <div class="section-tag">Contatti</div>
-        <h2 class="section-title">Parliamoci</h2>
-        <p>Un progetto, una collaborazione o anche solo una chiacchierata tecnica — scrivimi. Rispondo entro 24 ore.</p>
+        <div class="section-tag" data-i18n="contact.tag">Contatti</div>
+        <h2 class="section-title" data-i18n="contact.title">Parliamoci</h2>
+        <p data-i18n="contact.intro">Un progetto, una collaborazione o anche solo una chiacchierata tecnica — scrivimi. Rispondo entro 24 ore.</p>
         <br>
         <div class="contact-links">
           <a href="mailto:dpescatore@gmail.com" class="clink">
@@ -425,14 +430,14 @@
         </div>
       </div>
       <form id="contact-form" class="reveal" novalidate>
-        <input type="hidden" name="_subject" value="Nuovo messaggio dal portfolio">
-        <div class="form-group"><label for="nome">Nome</label><input type="text" id="nome" name="nome" placeholder="Il tuo nome" required></div>
-        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="tua@email.com" required></div>
-        <div class="form-group"><label for="oggetto">Oggetto</label><input type="text" id="oggetto" name="oggetto" placeholder="Progetto / Collaborazione / Altro"></div>
-        <div class="form-group"><label for="messaggio">Messaggio</label><textarea id="messaggio" name="messaggio" placeholder="Descrivi la tua esigenza..." required></textarea></div>
+        <input type="hidden" name="_subject" data-i18n-value="form.subject" value="Nuovo messaggio dal portfolio">
+        <div class="form-group"><label for="nome" data-i18n="form.nome.label">Nome</label><input type="text" id="nome" name="nome" data-i18n-placeholder="form.nome.placeholder" placeholder="Il tuo nome" required></div>
+        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" data-i18n-placeholder="form.email.placeholder" placeholder="tua@email.com" required></div>
+        <div class="form-group"><label for="oggetto" data-i18n="form.oggetto.label">Oggetto</label><input type="text" id="oggetto" name="oggetto" data-i18n-placeholder="form.oggetto.placeholder" placeholder="Progetto / Collaborazione / Altro"></div>
+        <div class="form-group"><label for="messaggio" data-i18n="form.messaggio.label">Messaggio</label><textarea id="messaggio" name="messaggio" data-i18n-placeholder="form.messaggio.placeholder" placeholder="Descrivi la tua esigenza..." required></textarea></div>
         <button type="submit" class="btn-send">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          Invia messaggio
+          <span data-i18n="form.submit">Invia messaggio</span>
         </button>
         <div id="form-feedback" aria-live="polite"></div>
       </form>
@@ -441,9 +446,10 @@
 </section>
 
 <footer>
-  <p>© 2026 Daniele Pescatore · Software Engineer & Innovation Manager · Benevento, Italia</p>
+  <p data-i18n="footer.text">© 2026 Daniele Pescatore · Software Engineer & Innovation Manager · Benevento, Italia</p>
 </footer>
 
+<script src="js/i18n.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>
